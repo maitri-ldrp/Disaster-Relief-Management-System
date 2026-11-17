@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRMS | Disaster Relief Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #172b4d;
+        }
+
+        header {
+            background: #102b50;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #ffca58;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #102b50, #176b87);
+            color: white;
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 25px 8px 0;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sos {
+            background: #e53935;
+            color: white;
+        }
+
+        .report {
+            background: #ffca58;
+            color: #172b4d;
+        }
+
+        .section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px #00000012;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #176b87;
+        }
+
+        .card p {
+            color: #637083;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #102b50;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                line-height: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🌍 DRMS</h2>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Disaster Relief Management System</h1>
+
+    <p>
+        A smart emergency response platform designed to
+        connect citizens, volunteers, rescue teams and
+        authorities during disasters.
+    </p>
+
+    <a href="/sos" class="btn sos">🚨 Emergency SOS</a>
+
+    <a href="/report" class="btn report">Report Disaster</a>
+</section>
+
+<section class="section" id="about">
+    <h2>About DRMS</h2>
+
+    <p>
+        DRMS helps coordinate disaster reporting,
+        emergency assistance, resource management
+        and rescue operations through one platform.
+    </p>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h1>🚨</h1>
+            <h3>Emergency SOS</h3>
+            <p>Request emergency assistance during disasters.</p>
+        </div>
+
+        <div class="card">
+            <h1>📢</h1>
+            <h3>Disaster Reporting</h3>
+            <p>Report floods, earthquakes, fires and other disasters.</p>
+        </div>
+
+        <div class="card">
+            <h1>🚑</h1>
+            <h3>Rescue Management</h3>
+            <p>Coordinate rescue teams and emergency operations.</p>
+        </div>
+
+        <div class="card">
+            <h1>📦</h1>
+            <h3>Resource Management</h3>
+            <p>Manage food, water, medicines and other resources.</p>
+        </div>
+
+        <div class="card">
+            <h1>🗺️</h1>
+            <h3>Live Disaster Map</h3>
+            <p>View disaster locations and emergency requests.</p>
+        </div>
+
+        <div class="card">
+            <h1>🤖</h1>
+            <h3>AI Assistant</h3>
+            <p>Get intelligent disaster-related guidance.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Disaster Relief Management System | DRMS</p>
+    <p>Technology for Humanity ❤️</p>
+</footer>
+
+</body>
+</html>
